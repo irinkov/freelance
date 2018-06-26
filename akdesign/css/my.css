@@ -1,0 +1,354 @@
+
+body {
+	background: #fff;
+	 font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style-type: none;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1300px;
+	border: 2px solid #CFD6D7;
+	height: 100%;
+	width: 95%;
+}
+header {
+	width: 100%;
+	max-width: 1300px;
+	margin-top: 30px;
+}
+.divider-left {
+	height: 2px;
+	opacity: 0.3;
+	background-color: #CFD6D7;
+	width: 27%;
+	float: left;
+	margin-top: 3.3%;
+	margin-left: 15px;
+}
+.divider-right {
+	height: 2px;
+	opacity: 0.3;
+	background-color: #CFD6D7;
+	width: 27%;
+	max-width: 350px;
+	float: right;
+	margin-right: 2%;
+	margin-top: -0.3%;
+}
+header img {
+	margin-left: 43%;
+	max-width: 100%;
+	
+}
+nav {
+	overflow: hidden;
+}
+
+nav ul {
+	margin-left: 25%;
+	padding-top: 15px;
+}
+nav ul li {
+	float: left;
+	list-style-type: none;
+	padding-left: 4.4%;
+	text-transform: uppercase;
+}
+nav ul li a {
+	font-size: 17px;
+	color: #625f5f;
+}
+nav ul li a:hover {
+	border-bottom: 1px solid  #CFD6D7;
+	color: #5cbfb8;
+}
+.active {
+	border-bottom: 1px solid  #CFD6D7;
+	color: #5cbfb8;
+}
+.bx-wrapper {
+	max-width: 95% !important;
+	box-shadow: none;
+}
+main {
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 2px solid #CFD6D7;
+	overflow: hidden;
+}
+main p {
+	line-height: 1.5;
+	text-align: justify;
+	color: #625f5f;
+	font-weight: 100;
+	text-indent: 30px;
+}
+.left_foto {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+footer {
+	width: 100%;
+	height: 20%;
+	position: relative;
+}
+.footer-contacts {
+	margin-left: 13%;
+	margin-top: 4%;
+	width: 80%;
+	display: inline-block;
+}
+.footer-contacts a,b {
+	color: #60BDBE;
+	font-weight: normal;
+	font-size: 20px;
+
+}
+
+.fa-phone-square,
+.fa-envelope {
+	color: #60BDBE;
+}
+.e-mail,
+.social-icons,
+.phone {
+	float: left;
+	margin-right: 18%;
+	width: 27%;
+}
+.e-mail a {
+	position: relative;
+	bottom: 3px;
+}
+.social-icons {
+	width: 12%;
+}
+.e-mail,
+.social-icons {
+	padding-top: 2%;
+}
+.footer-contacts
+div:last-child {
+	margin-right: 0;
+	float: right;
+	line-height: 2;
+}
+.phone {
+	width: 25%;
+	padding-bottom: 1%;
+}
+.phone img, i {
+	padding-top: 3%;	
+}
+
+article {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.contact-block a {
+	color: #60BDBE;
+	font-weight: bold;
+}
+.contact-block {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 80px;
+
+}
+fieldset {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+legend {
+	color: #195966;
+	font-size: 21px; 
+	margin-left: 10%;
+
+}
+.contact-block p {
+	color: #625f5f;
+	line-height: 1.5;
+}
+
+label {
+	font-size: 18px;
+	margin-left: 10%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+label[for="message"] {
+	position: absolute;
+	bottom: 40%;
+}
+input[type="text"] {
+	margin-left: 17%;
+}
+input[type="tel"] {
+	margin-left: 6.5%;
+}
+input[type="email"] {
+	margin-left: 8.8%;
+}
+
+textarea {
+	margin-left: 36.5%;
+	 width: 40%; 
+	 height: 10%;
+}
+input {
+	width: 20%;
+}
+
+.bottom-line {
+	background-color: #CFD6D7;
+	color: #195966;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.foto-block {
+	width: 82%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.foto-block a {
+	margin-right: 1px;
+}	
+.foto-block img {
+	max-width: 100%;
+	height: auto;
+}
+.title {
+	color: #195966;
+	font-size: 25px;
+	font-family: 'Roboto Condensed', sans-serif ;
+}
+input[type="button"] {
+	background-color: #60bdbe;
+	width: 150px;
+	height: 30px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 39%;
+	border-radius: 5px;
+	font-size: 17px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.lets_meet {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 100px;
+	background-color: #60bdbe;
+	height: auto;
+
+}
+.lets_meet p {
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 20px;
+	color: #fff;
+}
+.e-mail a {
+	padding-left: 5px;
+}
+h2 {
+	color: #195966;
+	font-weight: normal;
+}
+
+
+
+@media screen and (max-width: 769px) {
+	
+	.e-mail, .social-icons {
+		float: none;
+	}
+	.social-icons {
+		display: table-cell;
+	}
+	.phone {
+		width: 100%;
+	}
+	header img {
+		margin-left: 37%;
+		
+	}
+	nav ul {
+		margin-left: 1%;
+	}
+	nav {
+		margin-left: 10%;
+	}
+	
+	legend {
+		font-size: 18px;
+	}
+	.contact-block,
+	.lets_meet {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.divider-left, .divider-right {
+		display: none;
+	}
+	label[for="message"],
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	input[type="button"],
+	textarea {
+		margin: 0 auto;
+		width: 50%;
+		display: block;
+		margin-top: 5px;
+	}
+	label {
+		font-size: 14px;
+		margin: 0 auto;
+	}
+	textarea {
+		margin-top: 40px;
+		width: 60%;
+		}
+	.phone {
+		width: 100%;
+	}
+	}
+
+
+	@media screen and (max-width: 450px ){
+		header img {
+			margin-left: 28%;
+		}
+		nav {
+		margin-left: 3%;
+		}
+	}
+
+@media screen and (max-width: 300px) {
+	header img {
+		margin-left: 5%;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	header img {
+		margin-left: 20%;
+	}
+	
+}
+
