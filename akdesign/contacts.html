@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interior Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">  
+  <link rel="stylesheet" type="text/css" href="css/my.css">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#form").submit(function() {
+      var form_data = $(this).serialize();
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: form_data,
+        success: function() {
+          alert("Ваше сообщение отправлено!");
+        }
+      })
+    })
+  })
+</script>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <a href="#"><img src="images/Logo1.jpg" alt="logo"></a>
+        <nav>
+        <hr class="divider-left">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="price.html">Стоимость услуг</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+          </ul> 
+          <hr class="divider-right">
+        </nav>
+    </header>
+    
+    <div class="contact-block">
+        <form action="send.php" method="post" id="form">
+          <fieldset style="position: relative;">
+            <legend>Обратная связь</legend>
+            <p><label for="name">Ваше имя:</label><input type="text" name="name" required></p>
+            <p><label for="phone">Контактный телефон: </label><input type="tel" name="tel" required></p>
+            <p><label for="email">Контактный e-mail: </label><input type="email" name="email" required></p>
+            <p><label for="message">Ваш вопрос:</label><textarea name="message" cols="40" rows="6"></textarea></p> 
+
+            <input type="submit" value="Отправить"">
+          </fieldset>
+        </form>
+    </div>
+    <div class="footer-contacts">
+      <div class="e-mail"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><a href="mailto:annettedesign88@gmail.com">annettedesign88@gmail.com</a></div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="phone"><img src="images/Viber.png" alt="Viber"><b style="position: relative; bottom: 10px;">+380 63 416 86 63</b><br><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i><b style="padding-left: 7px; position: relative;bottom: 5px;">+380 66 731 47 11</b>
+      </div>
+    </div>
+    <div class="lets_meet">
+        <p>Давайте встретимся</p>
+    </div>
+
+    <footer>
+    <div class="bottom-line">
+    AKdesign 2012-2017
+    </div>
+    </footer>  
+  </div>
+
+</body>
+</html>
