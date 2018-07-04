@@ -35,16 +35,17 @@ header {
 	height: 2px;
 	opacity: 0.3;
 	background-color: #CFD6D7;
-	width: 27%;
-	max-width: 350px;
+	width: 26%;
 	float: right;
 	margin-right: 2%;
 	margin-top: -0.3%;
+
 }
 header img {
 	margin-left: 43%;
 	max-width: 100%;
-	
+	 width: 15%; 
+	 height: 15%;
 }
 nav {
 	overflow: hidden;
@@ -75,6 +76,7 @@ nav ul li a:hover {
 .bx-wrapper {
 	max-width: 95% !important;
 	box-shadow: none;
+	margin-right: 20px;
 }
 main {
 	width: 80%;
@@ -92,6 +94,7 @@ main p {
 .left_foto {
 	float: left;
 	margin: 0 10px 0 0;
+	max-width: 100%;
 }
 
 footer {
@@ -232,7 +235,7 @@ input {
 	font-size: 25px;
 	font-family: 'Roboto Condensed', sans-serif ;
 }
-input[type="button"] {
+input[type="submit"] {
 	background-color: #60bdbe;
 	width: 150px;
 	height: 30px;
@@ -269,7 +272,10 @@ h2 {
 
 
 
-@media screen and (max-width: 769px) {
+
+
+
+@media screen and (max-width: 799px) {
 	
 	.e-mail, .social-icons {
 		float: none;
@@ -280,23 +286,24 @@ h2 {
 	.phone {
 		width: 100%;
 	}
-	header img {
-		margin-left: 37%;
-		
-	}
+	
+
 	nav ul {
-		margin-left: 1%;
-	}
-	nav {
-		margin-left: 10%;
+		margin-left: 0;
 	}
 	
 	legend {
 		font-size: 18px;
 	}
+
 	.contact-block,
 	.lets_meet {
 		margin-top: 15px;
+	}
+	nav ul li {
+		float: none;
+		padding-left: 0;
+
 	}
 }
 
@@ -308,12 +315,12 @@ h2 {
 	input[type="text"],
 	input[type="tel"],
 	input[type="email"],
-	input[type="button"],
+	input[type="submit"],
 	textarea {
 		margin: 0 auto;
-		width: 50%;
+		width: 40%;
 		display: block;
-		margin-top: 5px;
+		
 	}
 	label {
 		font-size: 14px;
@@ -321,34 +328,36 @@ h2 {
 	}
 	textarea {
 		margin-top: 40px;
-		width: 60%;
+		width: 40%;
 		}
 	.phone {
 		width: 100%;
 	}
-	}
-
-
-	@media screen and (max-width: 450px ){
-		header img {
-			margin-left: 28%;
-		}
-		nav {
-		margin-left: 3%;
-		}
-	}
-
-@media screen and (max-width: 300px) {
-	header img {
-		margin-left: 5%;
-	}
 	
+	}
+
+
+@media screen and (max-width: 1200px) {
+	.divider-right {
+		width: 20%;
+	}
 }
 
-@media screen and (max-width: 600px) {
-	header img {
-		margin-left: 20%;
+  
+
+
+@media screen and (min-width: 796px) and (max-width: 1024px) {
+	nav ul {
+		margin-left: 15%;
 	}
-	
 }
+ @media screen and (max-width: 600px) {
+ 	header img {
+ 		margin-left: 40%;
+ 		width: 25%;
+ 	}
+ 	nav ul {
+		margin-left: 0;
+	}
+ }
 
