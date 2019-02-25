@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lambda</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato|Open+Sans:400,400i,700|Yeseva+One" rel="stylesheet"> 
+<!-- Script for send.php -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#form").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+              type: "POST",
+              url: "send.php",
+              data: form_data,
+              success: function() {
+                alert("Ваше сообщение отправлено!");
+              }
+            });
+          });
+        });
+      </script>
+      <!-- End of script -->
+</head>
+<body>
+   <div class="container">
+       <header class="header">
+           <div class="menu">
+               <div class="logo">
+                   <img src="img/Logo.png" alt="Logo">
+               </div>
+               <nav class="nav">
+                   <ul class="nav-list">
+                       <li class="nav-list-item"><a href="#">Home</a></li>
+                       <li class="nav-list-item"><a href="#">About</a></li>
+                       <li class="nav-list-item"><a href="#">Ingredients</a></li>
+                       <li class="nav-list-item"><a href="#">Menu</a></li>
+                       <li class="nav-list-item"><a href="#">Reviews</a></li>
+                       <li class="nav-list-item"><a href="#">Reservation</a></li>
+                       <li class="nav-list-item"><a href="#">Tw</a></li>
+                       <li class="nav-list-item"><a href="#">Face</a></li>
+                       <li class="nav-list-item"><a href="#">Youtube</a></li>
+                   </ul>
+               </nav>
+           </div>
+           <div class="main-text">
+                <h1>the right ingredients for the right food</h1>
+                <img src="img/Decoration1.png" alt="Decoration">
+            </div>
+            <div class="btns-block">
+                <button class="black-btn" id="myBtn">BOOK A TABLE</button>
+                <button class="white-btn">SEE THE MENU</button>
+            </div>
+            <!--POPUP BOOK A TABLE-->
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <!-- Modal Form -->
+                     <form action="send.php" method="POST" id="modal_form" class="modal-form">
+                             <legend class="modal-title">BOOK A TABLE</legend>
+                             <p><label class="label-modal" for="name">Name</label>
+                             <input type="name" placeholder="Enter your name" class="input-modal" name="name"></p>
+                            <p><label class="label-modal" for="email">E-mail</label> <input type="email" placeholder="Enter your e-mail" class="input-modal" name="email"></p>
+                            <p><label class="label-modal" for="number">Phone number</label><input type="phone" placeholder="Enter your phone" class="input-modal" name="tel"></p>
+                            <p><label class="label-modal" for="number">Number of persons</label><input type="number" min="1" max="10" class="input-modal" name="person"></p>
+                            <p><label class="label-modal" for="date">Choose the date</label><input type="date" class="input-modal" name="date"></p>
+                            <p><label class="label-modal" for="time">Choose the time</label>
+                            <input type="time" class="input-modal" name="time"></p>
+                            <button type="submit" class="modal-button">SUBMIT</button>
+                         </form>
+                </div>
+            </div>
+            <!-- End of Popup -->
+
+
+
+    </div>
+   
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
